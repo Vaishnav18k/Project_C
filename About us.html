@@ -13,6 +13,174 @@
       rel="stylesheet"
     />
   </head>
+  <style>
+    /* Basic reset and font styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-image: url(https://cdn.pixabay.com/photo/2020/06/29/19/26/piano-5353974_960_720.jpg);
+background-size: cover;
+background-position: center;
+  }
+
+h1, h2 {
+    color: #222;
+}
+
+/* Container styling */
+.about-us {
+    padding: 40px 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    margin: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Header styling */
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    font-family: 'Playfair Display', serif;
+}
+
+h2 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+   font-family:  'Lato', sans-serif;
+}
+
+p {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 23 px;
+}
+
+/* Content grid styling */
+.content-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.text-block, .image-block {
+    flex: 1 1 45%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.text-block {
+    text-align: left;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    padding: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.text-block:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.image-block {
+    text-align: center;
+}
+
+.image-block img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.image-block img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.image-block p {
+    margin-top: 10px;
+    font-style: italic;
+}
+
+/* CTA Section styling */
+.cta-section {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #222;
+    color: #fff;
+    border-radius: 8px;
+}
+
+.cta-section h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.cta-section p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff6f61;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #ff3f2c;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .content-grid {
+        flex-direction: column;
+    }
+    
+    .text-block, .image-block {
+        flex: 1 1 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    .cta-section p {
+        font-size: 1em;
+    }
+
+    .cta-button {
+        font-size: 1em;
+    }
+}
+
+    
+
+  </style>
+  
   <body>
     <!-- Header & Navbar Section -->
     <header>
@@ -34,6 +202,12 @@
           <!-- <li><a href="">Services</a></li> -->
           <li><a href="Events.html">Events</a></li>
           <li><a href="contact.html">Contact</a></li>
+          <li><i class="bx bxl-user"></i></li>
+          <div class="profile_logo">
+            <a href="profile.html">
+                <img src="https://cdn-icons-png.flaticon.com/128/16869/16869838.png" alt="Profile Logo" style="height:56px;" />
+            </a>
+        </div>
 
         </ul>
       </nav>
@@ -44,7 +218,7 @@
     <main>
       <br>
     <br>
-    <div class="flex-container">
+    <!-- <div class="flex-container">
 
 
       <div class = "card">
@@ -187,86 +361,81 @@
           </span>
         </a>
       </div>
-    </div>
-      
+    </div> -->
 
-
-    </main>
-    <div class="responsive-container-block bigContainer">
-      <div class="responsive-container-block Container">
-        <div class="imgContainer">
-          <img class="blueDots" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/aw3.svg">
-          <img class="mainImg" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/aw2.svg">
-        </div>
-        <div class="responsive-container-block textSide">
-          <p class="text-blk heading">
-            About Us
-          </p>
-          <p class="text-blk subHeading">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget purus lectus viverra in semper nec pretium mus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget purus lectus viverra in semper nec pretium mus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget purus lectus viverra in semper nec pretium mus.
-          </p>
-          <div class="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-tab-12 wk-mobile-12">
-            <div class="cardImgContainer">
-              <img class="cardImg" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/id2.svg">
-            </div>
-            <div class="cardText">
-              <p class="text-blk cardHeading">
-                Value
-              </p>
-              <p class="text-blk cardSubHeading">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              </p>
-            </div>
+    <section class="about-us">
+      <div class="container">
+          <h1>About Us</h1>
+          <p>Welcome to <strong>Artistic Music</strong>, where creativity and technology harmonize to transform your musical vision into captivating realities. We’re not just a platform—we’re your artistic partner, dedicated to crafting mesmerizing visuals and unforgettable soundscapes.</p>
+          
+          <div class="content-grid">
+              <div class="text-block">
+                  <h2>Our Vision</h2>
+                  <p>At Artistic Music, we believe in the power of music to inspire and connect people. Our mission is to elevate your music through high-quality intros, promotional materials, and visually stunning content that truly reflects your unique style.</p>
+              </div>
+              <div class="image-block">
+                  <img src="https://cdn.pixabay.com/photo/2016/11/23/15/48/audience-1853662_1280.jpg" alt="Music Event" />
+                  <p>Live performances that captivate and engage</p>
+              </div>
+              <div class="text-block">
+                  <h2>Our Team</h2>
+                  <p>Our team is a blend of talented designers, sound engineers, and creative professionals who are passionate about bringing your artistic vision to life. With a keen eye for detail and a commitment to excellence, we ensure that every project we undertake is both innovative and impactful.</p>
+              </div>
+              <div class="image-block">
+                  <img src="https://cdn.pixabay.com/photo/2021/08/04/13/06/software-developer-6521720_1280.jpg" alt="Our Team" />
+                  <p>Meet the creative minds behind your music</p>
+              </div>
           </div>
-          <div class="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-tab-12 wk-mobile-12">
-            <div class="cardImgContainer">
-              <img class="cardImg" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/id2.svg">
-            </div>
-            <div class="cardText">
-              <p class="text-blk cardHeading">
-                Value
-              </p>
-              <p class="text-blk cardSubHeading">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              </p>
-            </div>
-          </div>
-          <div class="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-tab-12 wk-mobile-12">
-            <div class="cardImgContainer">
-              <img class="cardImg" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/id2.svg">
-            </div>
-            <div class="cardText">
-              <p class="text-blk cardHeading">
-                Value
-              </p>
-              <p class="text-blk cardSubHeading">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              </p>
-            </div>
-          </div>
-          <div class="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-tab-12 wk-mobile-12">
-            <div class="cardImgContainer">
-              <img class="cardImg" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/id2.svg">
-            </div>
-            <div class="cardText">
-              <p class="text-blk cardHeading">
-                Value
-              </p>
-              <p class="text-blk cardSubHeading">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              </p>
-            </div>
-          </div>
-          <a>
-            <button class="explore">
-              Explore our Services
-            </button>
-          </a>
-        </div>
-        <img class="redDots" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/cw3.svg">
       </div>
-    </div>
+  </section>
+    </main>
+    <br>
+    
   
+
+    <!-- Footer Section -->
+    <footer>
+      <div class="section_container">
+        <div class="footer_section">
+          <div class="footer_logo">
+            <a href="index.html">
+              <img src="images/coffee_logo.png" alt="Coffee Logo" />
+              <h2>Coffee</h2>
+            </a>
+          </div>
+          <div class="useful_links">
+            <h3>Useful Links</h3>
+            <ul>
+              <li><a href="#">About</a></li>
+              <li><a href="Article.html">Articles</a></li>
+              <li><a href="Events.html">Events</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="contact_us">
+            <h3>Contact</h3>
+            <ul>
+              <li>
+                <i class="bx bx-current-location"></i>
+                <span>Chennai, TamilNadu</span>
+              </li>
+              <li>
+                <i class="bx bxs-phone-call"></i> <span>+044-92728239</span>
+              </li>
+              <li>
+                <i class="bx bxs-time-five"></i>
+                <span>Mon-Sun : 10:00 AM - 7:00 PM</span>
+              </li>
+            </ul>
+          </div>
+          <div class="follow_us">
+            <h3>Follow</h3>
+            <i class="bx bxl-facebook-circle"></i>
+            <i class="bx bxl-twitter"></i>
+            <i class="bx bxl-instagram-alt"></i>
+          </div>
+        </div>
+      </div>
 
 
 

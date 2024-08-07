@@ -11,6 +11,29 @@
       rel="stylesheet"
     />
 </head>
+<style>/* Search bar */
+.search_bar {
+    display: flex;
+    align-items: center;
+}
+
+.search_bar input {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+}
+
+.search_bar button {
+    background-color: #007bff;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.search_icon {
+    color: #fff;
+}</style>
 <body>
      <!-- Header & Navbar Section -->
      <header>
@@ -28,11 +51,19 @@
           </label>
           <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="#">About</a></li>
+            <li><a href="About us.html">About</a></li>
             <!-- <li><a href="">Services</a></li> -->
             <li><a href="Events.html">Events</a></li>
             <li><a href="contact.html">Contact</a></li>
-  
+            <!-- <div class="search_bar">
+              <input type="text" placeholder="Search...">
+              <button type="submit"><i class="search_icon bx bx-search"></i></button>
+          </div> -->
+          <div class="profile_logo">
+            <a href="profile.html">
+                <img src="https://cdn-icons-png.flaticon.com/128/16869/16869838.png" alt="Profile Logo" style="height:56px;" />
+            </a>
+        </div>
           </ul>
         </nav>
       </header>
@@ -122,7 +153,7 @@
             <div class="useful_links">
               <h3>Useful Links</h3>
               <ul>
-                <li><a href="#about">About</a></li>
+                <li><a href="About us.html">About</a></li>
                 <li><a href="#service">Services</a></li>
                 <li><a href="#why">Why Us</a></li>
                 <li><a href="#gallery">Gallery</a></li>
