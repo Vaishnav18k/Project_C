@@ -1,44 +1,130 @@
 
-
-.calendar-container {
-  width: 80%;
-  margin: 20px auto;
-  position: relative;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+/* Defining Custome Variables */
+:root {
+    /* Colors */
+    --primary-color: #3b141c;
+    --secondary-color: #f3961c;
+    --dark-color: #252525;
+    --white-color: #fff;
+    --light-gray-color: #f2f2f2;
+    /* Site Max-Width */
+    --site-max-width: 1300px;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background-color: var(--white-color);
+}
+/* Setting for the whole website */
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
 }
 
-#calendar {
-  max-width: 100%;
-  margin: 0 auto;
+nav {
+    display: flex;
+    padding: 15px 0 15px 20px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    max-width: var(--site-max-width);
+}
+nav .nav_logo a {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+nav .nav_logo a img {
+    max-width: 55px;
+}
+nav .nav_logo h2 {
+    color: var(--white-color);
+    font-weight: 600;
+    font-size: 32px;
+}
+nav ul {
+    display: flex;
+    gap: 10px;
+}
+nav ul li a {
+    display: block;
+    padding: 10px 25px;
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--white-color);
+    border-radius: 30px;
+    transition: all 0.2s ease;
+}
+nav ul li a:hover {
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+}
+nav label {
+    font-size: 32px;
+    color: var(--white-color);
+    cursor: pointer;
 }
 
-.event-details {
-  display: none;
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  background: white;
-  border: 1px solid #ddd;
-  padding: 15px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+
+
+
+
+
+
+
+
+body {
+  font-family: Arial, sans-serif;
 }
 
-.close-btn {
-  background: red;
-  color: white;
-  border: none;
-  padding: 5px 10px;
+.calendar {
+  display: inline-block;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.days-of-week {
+  display: flex;
+  justify-content: space-between;
+}
+
+.calendar-days {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.calendar-days div {
+  width: 14%;
+  text-align: center;
+  padding: 10px;
   cursor: pointer;
+  border: 1px solid #ddd;
 }
 
-.close-btn:hover {
-  background: darkred;
+.calendar-days div:hover {
+  background-color: #f0f0f0;
 }
 
-#readmore-btn {
-  color: blue;
-  text-decoration: underline;
-}
-
-#readmore-btn:hover {
-  text-decoration: none;
+.event-container {
+  margin-top: 20px;
+  border: 1px solid #ddd;
+  padding: 10px;
+  width: 300px;
 }
